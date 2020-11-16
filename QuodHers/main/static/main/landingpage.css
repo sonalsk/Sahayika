@@ -15,7 +15,7 @@ h1 {
 .header {
   position:relative;
   text-align:center;
-  background:linear-gradient(90deg, rgba(255,193,243,1) 37%, rgba(186,86,168,0.6001751042213761) 64%);
+background: linear-gradient(to top right, #d797d8 42%, #fea8ff 68%);
   color:white;
 }
 .logo {
