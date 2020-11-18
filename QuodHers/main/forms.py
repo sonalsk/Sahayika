@@ -14,11 +14,11 @@ class CreateUserForm(UserCreationForm):
 class NGOregistrationForm(forms.ModelForm):
     class Meta:
         model = NGO
-        fields = ['NGOname', 'Location', 'PhoneNumber', 'VerificationImage', 'Cause']
+        fields = ['NGOname', 'Location', 'PhoneNumber', 'VerificationImage', 'Cause', 'emailid']
 
 
 class VolunteerForm(forms.ModelForm):
     class Meta:
         model = Volunteer
         fields = ['FullName', 'CommunityOrInstitution', 'Address', 'PhoneNumber', 'VerificationImage', 'Gender',
-                  'WhyDoYouWantToHelp']
+                  'WhyDoYouWantToHelp', 'Age', 'emailid']
