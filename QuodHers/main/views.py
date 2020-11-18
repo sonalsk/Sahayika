@@ -7,7 +7,7 @@ from .models import *
 
 
 def home(request):
-    return render(request, 'main/landingpage.html')
+    return render(request, 'main/index.html')
 
 
 def registerPage(request):
