@@ -4,6 +4,7 @@ from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
 from .forms import *
 from .models import *
+from django.contrib import messages
 
 
 def home(request):
@@ -16,6 +17,7 @@ def registerPage(request):
         form = NGOregistrationForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Application sent successfully' , extra_tags='alert')
             return redirect('home')
     return render(request, 'main/registration.html', {'form': form})
 
@@ -25,6 +27,7 @@ def volunteer(request):
         form = VolunteerForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Application sent successfully', extra_tags='alert')
             return redirect('home')
     return render(request, 'main/Registeration2.html', {'form': form})
 
