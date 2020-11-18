@@ -25,6 +25,8 @@
 	<style>
 		.gradient {
 background: linear-gradient(117deg, rgba(199,158,148,1) 27%, rgba(244,169,255,1) 53%);}
+
+
 	</style>
 
 
@@ -35,10 +37,10 @@ background: linear-gradient(117deg, rgba(199,158,148,1) 27%, rgba(244,169,255,1)
 <!--Nav-->
 <nav id="header" class="fixed w-full z-30 top-0 text-white">
 
-	<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+	<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-7 ">
 			
 		<div class="pl-4 flex items-center">
-			<a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="./index.html"> 
+			<a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-7xl"  href="./index.html">
 				<!--Icon from: http://www.potlabicons.com/ -->
 				<!-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
 				<rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
@@ -72,7 +74,7 @@ background: linear-gradient(117deg, rgba(199,158,148,1) 27%, rgba(244,169,255,1)
 				</li>
 			</ul>
 			<button id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75">
-				<a href="#" target="_blank">Sign Up</a>
+				<a href="{% url 'volunteer' %}" target="_blank">Volunteer</a>
 			</button>
 		</div>
 	</div>
@@ -86,15 +88,15 @@ background: linear-gradient(117deg, rgba(199,158,148,1) 27%, rgba(244,169,255,1)
 <!-- Home -->
 <div class="pt-24">
 
-	<div class="container px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+	<div class="fluid-container flex flex-wrap flex-col md:flex-row items-center">
 		<!--Left Col-->
-		<div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-			<p class="tracking-loose w-full">Project</p>
-            <h1 class="my-4 text-4xl font-bold leading-tight">Come Together. <br> Uplifit Lives.</h1>
-			<p class="leading-normal text-2xl mb-8">A Centralised Web Application</p>
+		<div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left" id="topheader">
+
+            <h1 class="my-4 text-4xl font-bold leading-tight">STRONG WOMEN EMPOWER<br> OTHER WOMEN</h1>
+			<p class="leading-normal text-2xl mb-8">Rural women upliftment initiative</p>
 		
 			<button id="homepagebtn" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mb-5  py-4 px-8 shadow-lg">
-				<a href="#" target="_blank">Join The Change</a>
+				<a href="{% url 'register' %}" target="_blank">Enroll your NGO</a>
 			</button>
 			<br>
 			<br>
@@ -102,7 +104,7 @@ background: linear-gradient(117deg, rgba(199,158,148,1) 27%, rgba(244,169,255,1)
 		</div>
 		<!--Right Col-->
 		<div class="w-full md:w-3/5 text-center">
-			<img class="w-half md:w-3/5 z-50" src="../../media/sahayika.png">
+			<img class="w-full md:w-3/5 z-50" src="../../media/sahayika.png">
 		</div>
 		
 		<div>
