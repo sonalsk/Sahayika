@@ -19,4 +19,13 @@ def registerPage(request):
             return redirect('home')
     return render(request, 'main/registration.html', {'form': form})
 
+def volunteer(request):
+    form = VolunteerForm()
+    if request.method == 'POST':
+        form = VolunteerForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    return render(request, 'main/Registeration2.html', {'form': form})
+
 # Create your views here.
