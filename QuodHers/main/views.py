@@ -18,6 +18,10 @@ def loginPage(request):
             return redirect('home')  
     return render(request, 'main/login.html', context)
 
+def logout():
+    logout(request)
+    return redirect('main/login.html')
+
 def DummyregisterPage(request):
     form = UserCreationForm()
     context = {'form' : form}
