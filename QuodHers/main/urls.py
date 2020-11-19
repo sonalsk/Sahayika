@@ -9,8 +9,8 @@ urlpatterns = [
     path('volunteer', views.volunteer, name='volunteer'),
     path('dummy', views.DummyregisterPage, name='dummy'),
     path('login', views.loginPage, name='login'),
-
-
+    path('feedback', views.feedbackview, name='feedback'),
+    path('gallery', views.gallery, name='gallery'),
     ]
 
 if settings.DEBUG:

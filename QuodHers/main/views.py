@@ -56,3 +56,16 @@ def volunteer(request):
     return render(request, 'main/Registeration2.html', {'form': form})
 
 # Create your views here.
+def feedbackview(request):
+    form = FeedbackForm()
+    if request.method == 'POST':
+        form = FeedbackForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Thank you for your feedback :)', extra_tags='alert')
+            return redirect('home')
+    return render(request, 'main/feedback.html', {'form': form})
+
+def gallery(request):
+    Feedback = feedback.objects.all()
+    return render(request, 'main/gallery.html', {'Feedback': Feedback})

@@ -32,3 +32,9 @@ class Volunteer(models.Model):
 
 
 
+
+class feedback(models.Model):
+    image = models.ImageField(default='', upload_to="../media")
+    message = models.CharField(max_length=5000, default='')
+    def __str__(self):
+        return self.message
