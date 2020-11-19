@@ -22,3 +22,8 @@ class VolunteerForm(forms.ModelForm):
         model = Volunteer
         fields = ['FullName', 'CommunityOrInstitution', 'Address', 'PhoneNumber', 'VerificationImage', 'Gender',
                   'WhyDoYouWantToHelp', 'Age', 'emailid']
+
+class FeedbackForm(forms.ModelForm):
+    class Meta:
+        model = feedback
+        fields = ['image', 'message']
