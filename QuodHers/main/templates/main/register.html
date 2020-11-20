@@ -31,24 +31,24 @@ of Simple CSS Waves-->
         <form method="POST" enctype="multipart/form-data" id="white_labels">
             {% csrf_token %}
             <div>
-                            <h3><strong>NGO name*</strong></h3>
-                            {{form.NGOname}} <br>
+                            <h3><strong>NGO name*  {{form.NGOname}} </strong></h3>
+                           <br>
                         </div>
                         <div>
-                            <h3><strong>Location of NGO *</strong></h3>
-                            {{form.Location}} <br>
+                            <h3><strong>Location of NGO *{{form.Location}}</strong></h3>
+                             <br>
                         </div>
                         <div>
-                            <h3><strong>Phone Number*</strong></h3>
-                            {{form.PhoneNumber}} <br>
+                            <h3><strong>Phone Number* {{form.PhoneNumber}}</strong></h3>
+                             <br>
                         </div>
                          <div>
-                            <h3><strong>Verification of NGO*</strong></h3>
-                            {{form.VerificationImage}} <br>
+                            <h3><strong>Verification of NGO* {{form.VerificationImage}}</strong></h3>
+                            <br>
                         </div>
                         <div>
-                            <h3><strong>Cause*</strong></h3>
-                            {{form.Cause}}
+                            <h3><strong>Cause*  {{form.Cause}}</strong></h3>
+
                         </div>
             <div class="form-group ">
                 <button id="signin" class="btn btn-dark" type="submit">SAVE</button>

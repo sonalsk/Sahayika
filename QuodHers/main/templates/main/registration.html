@@ -92,54 +92,51 @@
     
     <header class="max-w-lg mx-auto pt-5">
         <a href="#">
-            <h1 class="text-4xl font-bold text-white text-center">Sign Up</h1>
+            <h1 class="text-4xl font-bold text-white text-center">NGO application</h1>
         </a>
     </header>
 	
-	<main class="bg-gray-200 max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+	<main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
         <section>
-            <h3 class="font-bold text-2xl">Welcome to Sahayika!</h3>
-            <p class="text-gray-600 pt-2">Sign up to create your account.</p>
+            <h3 class="font-bold text-2xl">Add your NGO to this portal to send maximum help for the rural women</h3>
+            <p class="text-gray-600 pt-2">Application form will be screened in 5 to 7 days</p>
         </section>
 
         <section class="mt-10">
             <form class="flex flex-col" method="POST" action="">
                 {% csrf_token %}
-                <div class="mb-6 pt-3 rounded bg-white">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">NGO Name</label>
-                    {{form.NGOname}} <br>
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">NGO Name {{form.NGOname}}</label>
+                     <br>
                 </div>
-                <div class="mb-6 pt-3 rounded bg-white">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Location</label>
-                    {{form.Location}} <br>
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Location {{form.Location}} </label>
+                    <br>
                 </div>
-                <div class="mb-6 pt-3 rounded bg-white">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Verification Image (scanned)</label>
-                    {{form.VerificationImage}} <br>
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Verification Image (scanned) {{form.VerificationImage}} </label>
+                    <br>
                 </div>
-                <div class="mb-6 pt-3 rounded bg-white">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Phone Number</label>
-                    {{form.PhoneNumber}}
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Phone Number{{form.PhoneNumber}}</label>
+
                 </div>
-                <div class="mb-6 pt-3 rounded bg-white">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Email id</label>
-                    {{form.emailid}}
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Email id {{form.emailid}}</label>
+
                 </div>
-                <div class="mb-6 pt-3 rounded bg-white">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Cause*</label>
-                    {{form.Cause}} <br>
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Cause*   {{form.Cause}}</label>
+                  <br>
                 </div>
 
 				
 				<button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" 
-				type="submit">Sign Up</button>
+				type="submit">APPLY</button>
             </form>
         </section>
 	</main>
 
-    <div class="max-w-lg mx-auto text-center mt-12 mb-6">
-        <p class="text-white">Already have an account? <a href="#" class="font-bold hover:underline" target="_blank">Log In</a>.</p>
-    </div>
 
 
 
