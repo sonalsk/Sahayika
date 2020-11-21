@@ -7,32 +7,35 @@ from .forms import *
 from .models import *
 from django.contrib import messages
 
+def home(request):
+    return render(request, 'main/index.html')
+
+def ngohome(request):
+    return render(request, 'main/ngoindex.html')
+
 def loginPage(request):
     context = {}
     if request.method == "POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
-        user = authenticate(request , username = username, password =password)
-        if  user is not None:
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
             login(request, user)
-            return redirect('home')  
+            return redirect('home')
     return render(request, 'main/login.html', context)
 
-def logout():
-    logout(request)
-    return redirect('main/login.html')
+
+
 
 def DummyregisterPage(request):
     form = UserCreationForm()
-    context = {'form' : form}
+    context = {'form': form}
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
     return render(request, 'main/DummyRoute.html', context)
 
-def home(request):
-    return render(request, 'main/index.html')
 
 
 def registerPage(request):
@@ -53,7 +56,10 @@ def volunteer(request):
             form.save()
             messages.success(request, 'Application sent successfully', extra_tags='alert')
             return redirect('home')
-    return render(request, 'main/registeration2.html', {'form': form})
+    return render(request, 'main/Registeration2.html', {'form': form})
+
+
+
 
 def volunteerMain(request):
     form = VolunteerForm()
@@ -64,6 +70,8 @@ def volunteerMain(request):
             messages.success(request, 'Application sent successfully', extra_tags='alert')
             return redirect('home')
     return render(request, 'main/Volunteer.html', {'form': form})
+
+
 # Create your views here.
 def feedbackview(request):
     form = FeedbackForm()
@@ -75,10 +83,12 @@ def feedbackview(request):
             return redirect('home')
     return render(request, 'main/feedback.html', {'form': form})
 
+
 def gallery(request):
     Feedback = feedback.objects.all()
     return render(request, 'main/gallery.html', {'Feedback': Feedback})
 
+
 def listofngos(request):
-    Ngo = NGO.objects.all()
-    return render(request, 'main/ngolist.html', {'Ngo':Ngo})
+    Ngo = newNGO.objects.all()
+    return render(request, 'main/ngolist.html', {'Ngo': Ngo})

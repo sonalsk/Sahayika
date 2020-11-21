@@ -13,8 +13,9 @@ urlpatterns = [
     path('gallery', views.gallery, name='gallery'),
     path('volunteerMain', views.volunteerMain, name='youthvolunteer'),
     path('ngolist', views.listofngos, name='ngolist'),
+    path('ngohome', views.ngohome, name='ngohome'),
 
-    ]
+]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
