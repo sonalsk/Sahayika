@@ -91,4 +91,4 @@ def gallery(request):
 
 def listofngos(request):
     Ngo = newNGO.objects.all()
-    return render(request, 'main/ngolist.html', {'Ngo': Ngo})
+    return render(request, 'main/ngos.html', {'Ngo': Ngo})
