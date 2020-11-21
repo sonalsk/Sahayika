@@ -78,3 +78,7 @@ def feedbackview(request):
 def gallery(request):
     Feedback = feedback.objects.all()
     return render(request, 'main/gallery.html', {'Feedback': Feedback})
+
+def listofngos(request):
+    Ngo = NGO.objects.all()
+    return render(request, 'main/ngolist.html', {'Ngo':Ngo})

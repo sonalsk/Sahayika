@@ -21,11 +21,14 @@
 </head>
 
 <body>
-{% for f in Feedback %}
+{% for n in ngo %}
 			<div class="col-md-4 col-lg-3 col-sm-6 text-center">
 				<div class = "card" id="buy-cards">
 					<div class="card-body">
-						<img class="card-img-top" src="{{ f.image.url}}">
+						<img class="card-img-top" src="{{ n.NgoLogo.url}}">
+						<h5 class="card-title text-center" id="title-book">{{n.NGOname}}</h5>
+						<h5 class="card-title text-center" id="title-book">{{f.Cause}}</h5>
+						<a href="">{{n.website}}</a><h5 class="card-title text-center" id="title-book">Visit our website</h5>
 						<h5 class="card-title text-center" id="title-book">{{f.message}}</h5>
 
 						</div>
