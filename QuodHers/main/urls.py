@@ -11,7 +11,8 @@ urlpatterns = [
     path('login', views.loginPage, name='login'),
     path('feedback', views.feedbackview, name='feedback'),
     path('gallery', views.gallery, name='gallery'),
-    path('volunteerMain', views.volunteerMain, name='gallery'),
+    path('volunteerMain', views.volunteerMain, name='youthvolunteer'),
+    path('ngolist', views.listofngos, name='ngolist'),
 
     ]
 

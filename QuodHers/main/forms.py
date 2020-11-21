@@ -14,7 +14,7 @@ class CreateUserForm(UserCreationForm):
 class NGOregistrationForm(forms.ModelForm):
     class Meta:
         model = NGO
-        fields = ['NGOname', 'Location', 'PhoneNumber', 'VerificationImage', 'Cause', 'emailid']
+        fields = ['NGOname','NgoLogo','website','Location', 'PhoneNumber', 'VerificationImage', 'Cause', 'emailid']
 
 
 class VolunteerForm(forms.ModelForm):
