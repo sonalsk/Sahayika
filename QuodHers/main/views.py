@@ -53,8 +53,17 @@ def volunteer(request):
             form.save()
             messages.success(request, 'Application sent successfully', extra_tags='alert')
             return redirect('home')
-    return render(request, 'main/Registeration2.html', {'form': form})
+    return render(request, 'main/registeration2.html', {'form': form})
 
+def volunteerMain(request):
+    form = VolunteerForm()
+    if request.method == 'POST':
+        form = VolunteerForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Application sent successfully', extra_tags='alert')
+            return redirect('home')
+    return render(request, 'main/Volunteer.html', {'form': form})
 # Create your views here.
 def feedbackview(request):
     form = FeedbackForm()
