@@ -82,8 +82,12 @@
 					</li>
 					<li class="mr-3">
 						<a class="inline-block toggleColour text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-							href="#gallery">Gallery</a>
+							href="#gallery">Feedback</a>
 					</li>
+					<button id="navAction"
+					class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75">
+					<a href="{% url 'home' %}" target="_blank">Logout</a>
+				</button>
 				</ul>
 
 			</div>
@@ -113,11 +117,11 @@
 				<div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 
 					<button id="homepagebtn" class="mx-auto lg:mx-4 hover:underline bg-white text-gray-800 font-bold rounded-full mb-5  py-4 px-8 shadow-lg flex-col">
-						<a href="{% url 'register' %}" target="_blank">View all the NGOs</a>
+						<a href="{% url 'ngolist' %}" target="_blank">View all the NGOs</a>
 					</button>
 
 					<button id="homepagebtn" class="mx-auto lg:mx-4 hover:underline bg-white text-gray-800 font-bold rounded-full mb-5  py-4 px-8 shadow-lg flex-col">
-						<a href="{% url 'volunteer' %}" target="_blank">View the communities</a>
+						<a href="#" target="_blank">View the communities</a>
 					</button>
 
 				</div>
@@ -134,6 +138,20 @@
 
 		</div>
 
+	</div>
+	<div class="relative -mt-12 lg:-mt-24">
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+			</defs>
+			<g class="parallax">
+				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+			</g>
+		</svg>
 	</div>
 <section id="about" class="bg-white border-b py-8">
 		<div class="container max-w-5xl mx-auto m-8">
