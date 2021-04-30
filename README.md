@@ -28,3 +28,12 @@ By filling a simple volunteering form, the NGOs get audiences and:
 ![Screenshot from 2021-04-30 18-12-20](https://user-images.githubusercontent.com/51206050/116696819-049b7f00-a9e0-11eb-8dcc-4b7c150f594c.png)
 
 ![Screenshot from 2021-04-30 18-12-33](https://user-images.githubusercontent.com/51206050/116696877-154bf500-a9e0-11eb-878c-c1c3a3cfe494.png)
+
+### LOCAL INSTALLATION
+
+1. Drop a ⭐ on the Github Repository.
+2. Clone the Repo by going to your local Git Client and pushing in the command:
+`https://github.com/sonalsk/Sahayika.git`
+3. Run the manage.py file on your local server
+4. Enjoy the application.
+
