@@ -1,19 +1,17 @@
-# Quodhers
+# Sahayika : Medium to connect NGOs and other helpful communities to females
 
-# Sahayika : the medium to connect NGOs and other helpful communities to the rural females.
-
-# Aim:
+# Aim
 The website Sahayika acts as the medium for NGOs and other non-profit organizations to reach and help thousands of rural women, especially young school girls.
 With Sahayika, the NGO or individuals acn register themselves with our portal, and offer help to needy schools.
 
-# Tech-Stack:
+# Tech-Stack
 
 1. For frontend: Javascript
                   HTML
                   CSS
 2. Backend : Django
 
-# How Website works:
+# How Website works
 1.People can get started by filling the registeration form. They can register as an NGO or the representative  of a particular chapter.
 By filling a simple volunteering form, the NGOs get audiences and:
   1. Conduct sessions and talks aboout female anatomy.
@@ -26,6 +24,7 @@ By filling a simple volunteering form, the NGOs get audiences and:
 5. It will also have a gallery that will dispaly all the work done by us so far.
 6.This will have options for them to volunteer.
 
+# Screenshots
+![Screenshot from 2021-04-30 18-12-20](https://user-images.githubusercontent.com/51206050/116696819-049b7f00-a9e0-11eb-8dcc-4b7c150f594c.png)
 
-
-
+![Screenshot from 2021-04-30 18-12-33](https://user-images.githubusercontent.com/51206050/116696877-154bf500-a9e0-11eb-878c-c1c3a3cfe494.png)
